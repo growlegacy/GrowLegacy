@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="GrowLegacy helps brands grow through influencer marketing and creative thumbnail design.">
+  <title>GrowLegacy — Creative Growth Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    :root { color-scheme: light; --paper:#f7f7f2; --ink:#18231e; --green:#245c45; --muted:#69756e; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:82px; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:'DM Sans',sans-serif; }
+    .display { font-family:'Manrope',sans-serif; }
+    .green-text { color:var(--green); }
+    .soft-card { background:#fff; border:1px solid #e8ebe4; transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease; }
+    .soft-card:hover { transform:translateY(-4px); border-color:#b9cdbf; box-shadow:0 18px 45px rgba(24,35,30,.07); }
+    .nav-link { color:#58645d; transition:color .2s ease; }
+    .nav-link:hover { color:var(--green); }
+    .focus-ring:focus-visible { outline:2px solid var(--green); outline-offset:3px; }
+    .hero-shape { background:radial-gradient(circle at 70% 25%,#dce9df 0,transparent 38%),linear-gradient(145deg,#e8eee6,#f3f4ed); }
+    input,select,textarea { color:#18231e; }
+    @media (prefers-reduced-motion:reduce) { html{scroll-behavior:auto} *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important} }
+  </style>
+</head>
+
+<body class="antialiased">
+  <!-- Simple sticky navigation -->
+  <header class="sticky top-0 z-50 border-b border-[#e7eae3] bg-[#f7f7f2]/90 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5" aria-label="Main navigation">
+      <a href="#home" class="flex items-center gap-2.5" aria-label="GrowLegacy home">
+        <img src="data:image/jpeg;base64,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" alt="GrowLegacy logo" class="h-10 w-10 rounded-lg bg-white object-contain p-1">
+        <span class="display text-xl font-extrabold tracking-tight">GrowLegacy<span class="green-text">.</span></span>
+      </a>
+      <div class="hidden items-center gap-7 text-sm font-semibold md:flex">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a href="https://www.instagram.com/grow_legacy_/" target="_blank" rel="noopener noreferrer" aria-label="GrowLegacy Instagram @grow_legacy_" class="inline-flex items-center gap-2 green-text text-sm font-bold hover:opacity-70"><i class="fa-brands fa-instagram text-lg"></i><span>@grow_legacy_</span></a>
+        <a href="#contact" class="rounded-full bg-[#245c45] px-5 py-2.5 text-white transition hover:bg-[#194632]">Let's talk <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-xs"></i></a>
+      </div>
+      <button id="menuButton" class="focus-ring rounded-lg border border-[#dce2d9] px-3 py-2 text-lg md:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+    <div id="mobileMenu" class="hidden border-t border-[#e7eae3] bg-[#f7f7f2] px-5 py-4 md:hidden">
+      <div class="flex flex-col gap-4 text-sm font-semibold">
+        <a class="nav-link mobile-link" href="#about">About</a>
+        <a class="nav-link mobile-link" href="#services">Services</a>
+        <a class="nav-link mobile-link" href="#contact">Contact</a>
+        <a class="nav-link" href="https://www.instagram.com/grow_legacy_/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram mr-2"></i>@grow_legacy_</a>
+        <a class="mobile-link rounded-full bg-[#245c45] px-5 py-3 text-center text-white" href="#contact">Let's talk</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="px-5 py-16 sm:py-24">
+      <div class="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.1fr_.9fr]">
+        <div>
+          <p class="mb-5 inline-flex items-center gap-2 rounded-full border border-[#dce5dc] bg-white px-4 py-2 text-xs font-bold uppercase tracking-[.16em] text-[#456c55]">
+            <span class="h-2 w-2 rounded-full bg-[#4c8b65]"></span> Creative growth studio
+          </p>
+          <h1 class="display max-w-2xl text-5xl font-extrabold leading-[1.08] tracking-[-.045em] sm:text-6xl lg:text-7xl">
+            Make your brand <span class="green-text">matter.</span>
+          </h1>
+          <p class="mt-6 max-w-xl text-base leading-8 text-[#69756e] sm:text-lg">
+            We help brands connect with the right creators and stand out with thoughtful visual design.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contact" class="focus-ring rounded-full bg-[#245c45] px-7 py-3.5 text-sm font-bold text-white transition hover:bg-[#194632]">Start a project <i class="fa-solid fa-arrow-right ml-2"></i></a>
+            <a href="#services" class="focus-ring rounded-full border border-[#d6ddd4] bg-white px-7 py-3.5 text-sm font-bold text-[#263b30] transition hover:border-[#245c45]">Explore services</a>
+          </div>
+          <a href="https://www.instagram.com/grow_legacy_/" target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#54715e] hover:text-[#245c45]">
+            <i class="fa-brands fa-instagram text-lg"></i> Follow @grow_legacy_
+          </a>
+        </div>
+
+        <div class="hero-shape relative flex min-h-[330px] items-center justify-center overflow-hidden rounded-[2rem] p-8 sm:min-h-[420px]">
+          <div class="absolute h-64 w-64 rounded-full border border-[#b9cdbf]"></div>
+          <div class="absolute h-48 w-48 rounded-full border border-[#b9cdbf]"></div>
+          <div class="relative flex h-44 w-44 rotate-[-5deg] items-center justify-center rounded-[2rem] border border-white bg-white p-5 shadow-xl sm:h-52 sm:w-52">
+            <img src="data:image/jpeg;base64,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" alt="GrowLegacy brand mark" class="h-full w-full rounded-xl object-contain">
+          </div>
+          <span class="absolute left-5 top-7 rounded-full border border-white bg-white/90 px-4 py-2 text-xs font-bold text-[#456c55] shadow-sm">Influence</span>
+          <span class="absolute bottom-7 right-5 rounded-full border border-white bg-white/90 px-4 py-2 text-xs font-bold text-[#456c55] shadow-sm">Creativity</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Short about -->
+    <section id="about" class="border-y border-[#e7eae3] bg-white px-5 py-16 sm:py-20">
+      <div class="mx-auto grid max-w-6xl gap-6 md:grid-cols-[.7fr_1.3fr] md:items-center">
+        <p class="text-xs font-bold uppercase tracking-[.2em] text-[#63816b]">A little about us</p>
+        <div>
+          <h2 class="display text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">Good ideas deserve <span class="green-text">great execution.</span></h2>
+          <p class="mt-4 max-w-3xl leading-7 text-[#69756e]">GrowLegacy is an influencer marketing and creative agency. We bring brands, creators, and visual storytelling together to build meaningful digital presence.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="px-5 py-16 sm:py-24">
+      <div class="mx-auto max-w-6xl">
+        <div class="mb-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+          <div>
+            <p class="mb-3 text-xs font-bold uppercase tracking-[.2em] text-[#63816b]">What we do</p>
+            <h2 class="display text-3xl font-extrabold tracking-tight sm:text-4xl">Our services</h2>
+          </div>
+          <p class="max-w-md text-sm leading-6 text-[#69756e]">Focused creative support to help your brand reach people and make a strong first impression.</p>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-2">
+          <article class="soft-card rounded-3xl p-7 sm:p-9">
+            <div class="mb-7 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#edf3ed] text-xl text-[#245c45]"><i class="fa-solid fa-users"></i></div>
+            <p class="mb-2 text-xs font-bold uppercase tracking-[.15em] text-[#78917e]">01 / Partnerships</p>
+            <h3 class="display text-2xl font-extrabold">Influencer Marketing</h3>
+            <p class="mt-4 leading-7 text-[#69756e]">Creator discovery and brand collaborations shaped around your audience, message, and campaign goals.</p>
+            <a href="#contact" class="mt-7 inline-flex items-center gap-2 text-sm font-bold text-[#245c45] hover:gap-3">Discuss a campaign <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="soft-card rounded-3xl p-7 sm:p-9">
+            <div class="mb-7 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#edf3ed] text-xl text-[#245c45]"><i class="fa-solid fa-image"></i></div>
+            <p class="mb-2 text-xs font-bold uppercase tracking-[.15em] text-[#78917e]">02 / Visual design</p>
+            <h3 class="display text-2xl font-extrabold">Thumbnail Designing</h3>
+            <p class="mt-4 leading-7 text-[#69756e]">Clean, compelling YouTube thumbnails and social creatives designed to make your content stand out.</p>
+            <a href="#contact" class="mt-7 inline-flex items-center gap-2 text-sm font-bold text-[#245c45] hover:gap-3">Request a design <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-[#eaf0e9] px-5 py-16 sm:py-24">
+      <div class="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[.8fr_1.2fr]">
+        <div>
+          <p class="mb-3 text-xs font-bold uppercase tracking-[.2em] text-[#63816b]">Get in touch</p>
+          <h2 class="display text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">Let's create <span class="green-text">something good.</span></h2>
+          <p class="mt-5 max-w-sm leading-7 text-[#69756e]">Have a campaign or design in mind? Send us a message and let's discuss it.</p>
+          <a href="mailto:growlegaxy@gmail.com" class="mt-7 inline-flex items-center gap-3 font-semibold text-[#245c45]"><i class="fa-regular fa-envelope"></i> growlegaxy@gmail.com</a>
+          <a href="https://www.instagram.com/grow_legacy_/" target="_blank" rel="noopener noreferrer" class="mt-4 flex items-center gap-3 font-semibold text-[#245c45]"><i class="fa-brands fa-instagram"></i>@grow_legacy_</a>
+        </div>
+
+        <div class="rounded-3xl border border-[#dce5dc] bg-white p-6 shadow-sm sm:p-8">
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+            <!-- Replace with your real Web3Forms access key -->
+            <input type="hidden" name="access_key" value="a8f9b396-7612-4ecd-a164-fbb7ccea98dd">
+            <input type="hidden" name="subject" value="New enquiry from GrowLegacy website">
+            <input type="hidden" name="from_name" value="GrowLegacy Website">
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label for="name" class="mb-2 block text-sm font-semibold">Name *</label>
+                <input id="name" name="name" type="text" required maxlength="80" autocomplete="name" placeholder="Your name" class="focus-ring w-full rounded-xl border border-[#dce2d9] bg-[#fbfcf9] px-4 py-3 outline-none">
+              </div>
+              <div>
+                <label for="email" class="mb-2 block text-sm font-semibold">Email *</label>
+                <input id="email" name="email" type="email" required maxlength="120" autocomplete="email" placeholder="you@example.com" class="focus-ring w-full rounded-xl border border-[#dce2d9] bg-[#fbfcf9] px-4 py-3 outline-none">
+              </div>
+            </div>
+            <div>
+              <label for="service" class="mb-2 block text-sm font-semibold">Service</label>
+              <select id="service" name="service" class="focus-ring w-full rounded-xl border border-[#dce2d9] bg-[#fbfcf9] px-4 py-3 outline-none">
+                <option value="">Choose a service</option>
+                <option>Influencer Marketing</option>
+                <option>Thumbnail Designing</option>
+                <option>Both services</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="mb-2 block text-sm font-semibold">Message *</label>
+              <textarea id="message" name="message" required minlength="10" maxlength="3000" rows="4" placeholder="Tell us about your project..." class="focus-ring w-full resize-y rounded-xl border border-[#dce2d9] bg-[#fbfcf9] px-4 py-3 outline-none"></textarea>
+            </div>
+            <button id="submitButton" type="submit" class="focus-ring w-full rounded-xl bg-[#245c45] px-6 py-3.5 font-bold text-white transition hover:bg-[#194632] disabled:opacity-60">Send message <i class="fa-solid fa-arrow-right ml-2"></i></button>
+            <p id="formStatus" class="hidden text-sm" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimal footer -->
+  <footer class="px-5 py-7">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
+      <a href="#home" class="display font-extrabold">GrowLegacy<span class="green-text">.</span></a>
+      <p class="text-xs text-[#7a857d]">© <span id="year"></span> GrowLegacy. All rights reserved.</p>
+      <a href="https://www.instagram.com/grow_legacy_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="green-text text-xl hover:opacity-70"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const menuButton = document.getElementById('menuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuButton.addEventListener('click', () => {
+      const opening = mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      menuButton.setAttribute('aria-expanded', String(opening));
+      menuButton.innerHTML = opening ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }));
+
+    // Current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Web3Forms submission with success/error feedback
+    const form = document.getElementById('contactForm');
+    const submitButton = document.getElementById('submitButton');
+    const formStatus = document.getElementById('formStatus');
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      formStatus.classList.remove('hidden', 'text-red-700', 'text-green-700');
+      formStatus.textContent = 'Sending your message...';
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending...';
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        const result = await response.json();
+        if (!response.ok || !result.success) throw new Error(result.message || 'Message could not be sent. Please try again.');
+        formStatus.textContent = 'Thank you! Your message has been sent.';
+        formStatus.classList.add('text-green-700');
+        form.reset();
+      } catch (error) {
+        formStatus.textContent = error.message || 'Something went wrong. Please email growlegaxy@gmail.com.';
+        formStatus.classList.add('text-red-700');
+      } finally {
+        submitButton.disabled = false;
+        submitButton.innerHTML = 'Send message <i class="fa-solid fa-arrow-right ml-2"></i>';
+      }
+    });
+  </script>
+</body>
+</html>
